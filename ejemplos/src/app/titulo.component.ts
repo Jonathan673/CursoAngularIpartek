@@ -9,6 +9,7 @@ import { Component, Input } from "@angular/core";
             color: white; 
             padding: 0.25rem; 
             margin-top: 0;
+            margin-bottom: 0;
             text-align: center;
         }`,
 })
