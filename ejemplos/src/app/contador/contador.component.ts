@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-contador',
@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 })
 
 export class ContadorComponent {
-  numero = 0;
+  @Input('inicial') numero = 0;
   onBotonPulsado() {
     this.numero++;
   }
