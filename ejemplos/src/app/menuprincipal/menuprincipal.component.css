@@ -1,15 +1,15 @@
 nav {
     margin-bottom: 6rem;
-    background-color: #333;
+    background-color: #575656;
     overflow: hidden;
 }
 
 ul {
-    margin-top: 0;
+    margin: 0;
     list-style-type: none;
-    /*display:flex;*/
-    /*justify-content: space-around;*/
-    /*padding:0.5rem 0;*/
+    display:flex;
+    justify-content: space-around;
+    padding:0.5rem 0;
 }
 
 a{
