@@ -7,5 +7,6 @@
         
     </form>
 
-    <app-contador [inicial]="20"></app-contador>
+    <app-contador [inicial]="1" (cambioNumero)="onCambioNumero($event)"></app-contador>
+    <h1>{{contadorActual}}</h1>
 </main>
