@@ -11,4 +11,8 @@ export class ProductoService {
     const respuesta = await fetch(this.url); 
     return respuesta.json();
   }
+  async obtenerPorId(id:number): Promise<Producto> {
+    const respuesta = await fetch(this.url + id); 
+    return respuesta.json();
+  }
 }
