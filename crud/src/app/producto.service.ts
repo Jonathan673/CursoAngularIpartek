@@ -5,9 +5,10 @@ import { Producto } from './producto';
   providedIn: 'root'
 })
 export class ProductoService {
+  url='http://127.0.0.1:3000/productos/'
 
-
-  obtenerTodos(): Producto[] {
-    return this.productos
+  async obtenerTodos(): Promise<Producto[]> {
+    const respuesta = await fetch(this.url); 
+    return respuesta.json();
   }
 }
