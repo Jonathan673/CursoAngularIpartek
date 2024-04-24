@@ -7,4 +7,5 @@ export const routes: Routes = [
     //pATH vacio es mi página inicial
     {path:'', component:ListadoComponent},
     {path:'formulario', component:FormularioComponent},
+    {path:'formulario/:id', component:FormularioComponent},
 ];
