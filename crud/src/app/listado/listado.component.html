@@ -14,7 +14,7 @@
             <td>{{p.precio}}</td>
             <td>
                 <a routerLink="formulario/{{p.id}}">Editar</a>
-                <a routerLink="">Borrar</a>
+                <a (click)="borrar(p.id)">Borrar</a>
             </td>
         </tr>
     </tbody>

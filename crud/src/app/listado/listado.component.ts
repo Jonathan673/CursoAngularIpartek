@@ -16,6 +16,14 @@ export class ListadoComponent {
   productos: Producto[] = [];
 
   constructor() {
+    this.cargarProductos();
+
+  }
+  cargarProductos() {
     this.servicio.obtenerTodos().then(productosRecibidos => this.productos = productosRecibidos);
+  }
+
+  borrar(id: number) {
+    this.servicio.borrar(id).then(() => this.cargarProductos);
   }
 }
