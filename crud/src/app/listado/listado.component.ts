@@ -24,6 +24,6 @@ export class ListadoComponent {
   }
 
   borrar(id: number) {
-    this.servicio.borrar(id).then(() => this.cargarProductos);
+    this.servicio.borrar(id).then(() => this.cargarProductos());
   }
 }

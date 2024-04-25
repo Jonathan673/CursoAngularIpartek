@@ -11,7 +11,7 @@
         <tr *ngFor="let p of productos">
             <td>{{p.id}}</td>
             <td>{{p.nombre}}</td>
-            <td>{{p.precio}}</td>
+            <td>{{p.precio}}€</td>
             <td>
                 <a routerLink="formulario/{{p.id}}">Editar</a>
                 <a (click)="borrar(p.id)">Borrar</a>
