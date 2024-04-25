@@ -38,8 +38,6 @@ export class ProductoService {
     return respuesta.json();
   }
 
-
-
   async borrar(id: number): Promise<any> {
     return await fetch(this.url + id, { method: 'DELETE' });
   }
