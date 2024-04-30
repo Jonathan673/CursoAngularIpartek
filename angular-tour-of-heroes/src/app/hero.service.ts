@@ -20,7 +20,7 @@ export class HeroService {
   }
 
   getHero(id: number): Observable<Hero> {
-    return this.http.get<Hero>(`${this.heroesUrl}/id`)
+    return this.http.get<Hero>(`${this.heroesUrl}/${id}`)
   }
 
   /** Log a HeroService message with the MessageService */
