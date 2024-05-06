@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './fichas.component.css'
 })
 export class FichasComponent {
-
+  videos = VIDEOS;
 }
